@@ -1,0 +1,9 @@
+php > foreach (parse_url("mx:#matthew:arasphere.net") as $key => $value) { echo "Key: $key; Value: $value\n"; }
+Key: scheme; Value: mx
+Key: fragment; Value: matthew:arasphere.net
+php > foreach (parse_url("mx:@matthew:arasphere.net") as $key => $value) { echo "Key: $key; Value: $value\n"; }
+Key: scheme; Value: mx
+Key: path; Value: @matthew:arasphere.net
+php > foreach (parse_url("mx:+matthew:arasphere.net") as $key => $value) { echo "Key: $key; Value: $value\n"; }
+Key: scheme; Value: mx
+Key: path; Value: +matthew:arasphere.net
