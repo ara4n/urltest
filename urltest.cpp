@@ -23,3 +23,6 @@ int main() {
     dumpUri("mx:@matthew:arasphere.net");
     dumpUri("mx:+matthew:arasphere.net");
 }
+
+// build with
+// g++ -std=c++11 -I ~/workspace/cpp-netlib-0.12.0-final -I ~/workspace/cpp-netlib-0.12.0-final/deps/asio/asio/include ../workspace/cpp-netlib-build/libs/network/src/libcppnetlib-uri.a -o urltest urltest.cpp && ./urltest 
